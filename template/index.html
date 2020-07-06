@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <h1>Welcome to Vue</h1>
+            <p class="notification" v-if="messages.count > 0">You have {{ messages.count }} messages.</p><!-- /.notification -->
+            <p v-else>No messages.</p>
+        </div><!-- /.container -->
+    </div><!-- /#app -->
+    <script src="https://unpkg.com/vue"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
